@@ -23,7 +23,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	// https://mvnrepository.com/artifact/org.openapitools/openapi-generator-gradle-plugin
-	implementation 'org.openapitools:openapi-generator-gradle-plugin:3.0.1'
+	implementation 'org.springdoc:springdoc-openapi-ui:1.6.9'
 
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'org.postgresql:postgresql'

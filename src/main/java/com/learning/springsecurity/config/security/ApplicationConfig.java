@@ -20,7 +20,10 @@ public class ApplicationConfig extends
   @Override
   protected void configure(HttpSecurity http) throws Exception {
     http.csrf().disable()
-        .authorizeRequests().antMatchers("/register", "/login").permitAll()
+        .authorizeRequests().antMatchers("/register",
+            "/login",
+            "/swagger-ui/**",
+            "/v3/api-docs/**").permitAll()
         .anyRequest().authenticated().and()
         .logout().invalidateHttpSession(true).clearAuthentication(true).permitAll();
   }
